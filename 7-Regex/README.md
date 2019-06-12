@@ -31,3 +31,5 @@ These are expressions that let you find certain patterns in your text.
 * [^] - match negation of the character class; e.g.: [^aeiou] -> matches all consonants (not vowels)
 
     Note: You do not need to escape special characters like ., ?,* in a character class   
+
+You can test your regular expressions using [this](https://www.regexpal.com/) link.
