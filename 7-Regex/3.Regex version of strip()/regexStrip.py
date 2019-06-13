@@ -10,7 +10,7 @@ def strip(string, sep=r'\s'):
     # if there is a match at the beg or end, replace it with an empty '' to remove it
     return regex.sub('', string)
 
-# removes characters abcd from th beg/end
+# removes characters abcd from the beg/end
 print(strip('aaaaabcdMy name is Shwetabcdddd','abcd'))
 # does not remove any characters since abcd are not present at the beg/end
 print(strip('   aaaaabcdMy name is Shwetabcdddd     ','abcd'))
