@@ -17,3 +17,11 @@ And if the user forgets what keywords they have, they can run
 py mcb.pyw list
 ``` 
 to copy a list of all keywords to the clipboard.
+```
+py mcb.pyw delete spam
+```
+will delete the keyword spam.
+```
+py mcb.pyw delete
+```
+will delete all the keywords.
