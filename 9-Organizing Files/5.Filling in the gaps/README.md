@@ -7,6 +7,14 @@ As an added challenge, write another program that can insert gaps into numbered 
 We need to use a regex to identify the prefix and the numbers:
 For example,
 ```
-^(spam)(\d)+(\.[a-z]+)
+^(spam)(\d+)(\.[a-z]+)
 ```
 This regex will match all the file names of the pattern spam01.txt, spam001.txt, etc.
+```
+Here group(1) = spam
+     group(2) = 001 -> number
+     group(3) = .txt -> extension
+```
+We store the numbers in a list and sort the list.
+Then iterate over the list in order, check the if the file path exists.
+If the file does not exist, rename the next file with the current number.
