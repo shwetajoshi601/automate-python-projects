@@ -42,7 +42,7 @@ def fillGaps(folderPath, prefix):
         # if this file does not exist
         if not os.path.exists(os.path.join(folderPath, newFilename)):
             # find the next actual filename
-            # oldNum = numbers[3-1] = numbers[2] = 4 (refer line:30)
+            # oldNum = numbers[3-1] = numbers[2] = 4 (refer line:33)
             oldNum = numbers[i-1]
             # oldFilename = spam + 00 + 4 + .txt = spam004.txt
             oldFilename = prefix + '0'*(numLen - len(str(oldNum))) + str(oldNum) + extn
